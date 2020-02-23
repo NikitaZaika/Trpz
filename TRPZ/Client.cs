@@ -4,8 +4,7 @@ using System.Text;
 
 namespace TRPZ
 {
-    class Test_class1
+    class Client
     {
-        //111111
     }
 }
