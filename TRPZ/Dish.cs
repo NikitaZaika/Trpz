@@ -9,9 +9,9 @@ namespace TRPZ
         private string name_of_dish;
         private int time_of_cooking;
         private int height_of_dish;
-        private List<string> ingrid_of_dish = new List<string>();
+        private string ingrid_of_dish;
 
-        public Dish(string name, int time, int height, List<string> ingrid)
+        public Dish(string name, int time, int height, string ingrid)
         {
             name_of_dish = name;
             time_of_cooking = time;
@@ -24,7 +24,7 @@ namespace TRPZ
         { get { return time_of_cooking; } set { time_of_cooking = value; } }
         public int Height_of_dish
         { get { return height_of_dish; } set { height_of_dish = value; } }
-        public List<string> Ingrid_of_dish 
+        public string Ingrid_of_dish 
         { get { return ingrid_of_dish; }  set { ingrid_of_dish = value; } }
 
     }

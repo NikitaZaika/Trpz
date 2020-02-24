@@ -8,7 +8,7 @@ namespace TRPZ
     {
         private string name_of_cook;
         private int speed_of_cook;
-        private List<Order> orders_of_cook = new List<Order>();
+        private List<Order> orders_for_cook = new List<Order>();
 
         public Cook(string name, int speed)
         {
@@ -21,12 +21,11 @@ namespace TRPZ
         { get { return speed_of_cook; } set { speed_of_cook = value; } }
         public List<Order> Orders_of_cook
         {
-            get { return orders_of_cook; }
-            set { orders_of_cook = value; }
-        }public List<Order> Orders_of_cook
+            get { return orders_for_cook; }
+            set { orders_for_cook = value; }
+        }
+        public void AddOrdersForCook()
         {
-            get { return orders_of_cook; }
-            set { orders_of_cook = value; }
         }
     }
 }

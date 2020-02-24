@@ -4,25 +4,50 @@ using System.Text;
 
 namespace TRPZ
 {
-    static class Restaurant
+    class Restaurant
     {
-        static private List<Cook> cooks = new List<Cook>();
-        static private List<Dish> dishes = new List<Dish>();
-        static private List<Furnace> furnaces = new List<Furnace>();
-        static public List<Furnace> Furnaces
+        private List<Cook> cooks = new List<Cook>(); 
+        private List<Order> orders = new List<Order>();
+        private List<Dish> dishes = new List<Dish>();
+        private List<Furnace> furnaces = new List<Furnace>();
+        public List<Order> Orders
+        {
+            get { return orders; }
+            set { orders = value; }
+        }
+        public List<Furnace> Furnaces
         {
             get { return furnaces; }
             set { furnaces = value; }
         }
-        static public List<Dish> Dishes
+        public List<Dish> Dishes
         {
             get { return dishes; }
             set { dishes = value; }
         }
-        static public List<Cook> Cooks
+        public List<Cook> Cooks
         {
             get { return cooks; }
             set { cooks = value; }
+        }
+        public void CreateOrder()
+        {
+        }
+        public void ChooseRightCook()
+        {
+
+        }
+        public void ChooseRightFurnace()
+        {
+
+        }
+        public void AddDish(string name, int time, int height, string ingrid)
+        {
+            dishes.Add(new Dish(name, time, height, ingrid));
+        }
+        public void AddCook(string name, int speed)
+        {
+            cooks.Add(new Cook(name, speed));
         }
     }
 }
