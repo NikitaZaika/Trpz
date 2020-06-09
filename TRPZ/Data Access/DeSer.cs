@@ -25,6 +25,7 @@ namespace TRPZ
             while (i < file_cook.Length)
             {
 
+
                 InfoOffice.Restaurants[0].AddCook(file_cook[i], int.Parse(file_cook[i + 1]));
                 i += 4;
             }
