@@ -14,5 +14,6 @@ namespace Entities
         public CookEntity Cook { get; set; }
         public int DishID { get; set; }
         public DishEntity Dish { get; set; }
+        public int Time { get; set; }
     }
 }

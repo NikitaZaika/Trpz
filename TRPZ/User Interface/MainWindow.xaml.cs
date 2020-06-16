@@ -25,9 +25,13 @@ namespace TRPZ
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            DeSer.ReadFile_Order();
+            DeSer.ReadFile_Cook();
+            DeSer.ReadFile_Dish();
+            DeSer.ReadFile_Client();
         }
     }
 }

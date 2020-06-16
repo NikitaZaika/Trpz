@@ -2,31 +2,58 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using BusinessLogic.Implementation;
+using Models;
 
 namespace TRPZ
 {
-    class DeSer
+    public static class DeSer
     {
-        private void ReadFile_Dish()
+        public static void ReadFile_Client()
         {
-            string[] file_dish = File.ReadAllLines(@"C:\Users\Никита\source\repos\TRPZ\Dish.txt", Encoding.Default);
+            string[] file_client = File.ReadAllLines(@"C:\Users\Никита\source\repos\TRPZ\Client.txt", Encoding.Default);
             int i = 0;
-            while(i < file_dish.Length)
+            int number = 1;
+            while (i < file_client.Length)
             {
-
-                InfoOffice.Restaurants[0].AddDish(file_dish[i], int.Parse(file_dish[i+1]), int.Parse(file_dish[i + 2]), file_dish[i + 3]);
-                i += 4;
+                Storage.AddClient(file_client[i], number);
+                i ++;
+                number++;
             }
         }
-        private void ReadFile_Cook()
+        public static void ReadFile_Cook()
         {
             string[] file_cook = File.ReadAllLines(@"C:\Users\Никита\source\repos\TRPZ\Cook.txt", Encoding.Default);
             int i = 0;
+            int number = 1;
             while (i < file_cook.Length)
             {
-
-
-                InfoOffice.Restaurants[0].AddCook(file_cook[i], int.Parse(file_cook[i + 1]));
+                Storage.AddCook(file_cook[i], file_cook[i + 1], number);
+                number ++;
+                i += 2;
+            }
+        }
+        public static void ReadFile_Dish()
+        {
+            string[] file_dish = File.ReadAllLines(@"C:\Users\Никита\source\repos\TRPZ\Dish.txt", Encoding.Default);
+            int i = 0;
+            int number = 1;
+            while (i < file_dish.Length)
+            {
+                Storage.AddDish(file_dish[i], int.Parse(file_dish[i + 1]), int.Parse(file_dish[i + 2]), number);
+                number++;
+                i += 3;
+            }
+        }
+        public static void ReadFile_Order()
+        {
+            string[] file_order = File.ReadAllLines(@"C:\Users\Никита\source\repos\TRPZ\Order.txt", Encoding.Default);
+            int i = 0;
+            int number = 1;
+            while (i < file_order.Length)
+            {
+                Storage.AddOrder(int.Parse(file_order[i]), int.Parse(file_order[i + 1]), int.Parse(file_order[i + 2]), int.Parse(file_order[i + 3]), int.Parse(file_order[i + 4]));
+                number++;
                 i += 4;
             }
         }

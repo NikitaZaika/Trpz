@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Models
 {
-    class Cook
+    public class Cook
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -15,6 +15,12 @@ namespace Models
         {
             Name = _name;
             Type = _type;
+        }
+        public Cook(string _name, string _type, int _id)
+        {
+            Name = _name;
+            Type = _type;
+            Id = _id;
         }
         public Cook()
         {
