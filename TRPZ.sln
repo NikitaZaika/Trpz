@@ -37,8 +37,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{966B9CA2-6013-44CE-AEA9-1F73C6101EDF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dishes", "Dishes\Dishes.csproj", "{2AC9048B-E3DF-451B-8B91-F05BAA4B10A3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,10 +71,6 @@ Global
 		{966B9CA2-6013-44CE-AEA9-1F73C6101EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{966B9CA2-6013-44CE-AEA9-1F73C6101EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{966B9CA2-6013-44CE-AEA9-1F73C6101EDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AC9048B-E3DF-451B-8B91-F05BAA4B10A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AC9048B-E3DF-451B-8B91-F05BAA4B10A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AC9048B-E3DF-451B-8B91-F05BAA4B10A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AC9048B-E3DF-451B-8B91-F05BAA4B10A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

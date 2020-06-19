@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BusinessLogic.Abstract
 {
-    class ICookService
+    interface ICookService
     {
         //public IEnumerable<Cook> GetAll();
         //public Cook GetCookByName(string name);

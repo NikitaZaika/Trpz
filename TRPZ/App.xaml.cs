@@ -9,7 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using TRPZ.User_Interface;
-
+using BusinessLogic.Abstract;
+using BusinessLogic.Implementation;
+using BusinessLogic.Implementation.Classes;
 
 namespace TRPZ
 {
@@ -30,6 +32,12 @@ namespace TRPZ
         private void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<MainWindow, MainWindow>();
+            services.AddTransient<IModel, Model>();
+            services.AddTransient<ViewModel, ViewModel>();
+            services.AddTransient<IStorageNetwork, StorageNetwork>();
+            services.AddTransient<DataLoader, DataLoader>();
+            services.AddTransient<OrderCreator, OrderCreator>();
+
         }
         protected override void OnStartup(StartupEventArgs e)
         {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BusinessLogic.Abstract
 {
-    class IDishService
+    interface IDishService
     {
 
     }

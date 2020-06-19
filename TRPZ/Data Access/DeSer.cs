@@ -57,5 +57,13 @@ namespace TRPZ
                 i += 4;
             }
         }
+        public static void LoadData()
+        {
+
+            ReadFile_Order();
+            ReadFile_Cook();
+            ReadFile_Dish();
+            ReadFile_Client();
+        }
     }
 }

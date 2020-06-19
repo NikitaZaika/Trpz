@@ -22,7 +22,7 @@ namespace Dishes
     {
         public MainWindow()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
     }
 }
