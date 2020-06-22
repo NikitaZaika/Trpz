@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities
 {
-    class CookEntity : IEntity<int>
+    public class CookEntity : IEntity<int>
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities
 {
-    class OrderEntity : IEntity<int>
+    public class OrderEntity : IEntity<int>
     {
         public int Id { get; set; }
 

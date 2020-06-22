@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities
 {
-    class DishEntity : IEntity<int>
+    public class DishEntity : IEntity<int>
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace BusinessLogic.Abstract
 {
-    interface IClientService
+    public interface IClientService
     {
+        public IEnumerable<Client> GetAll();
+        public Client GetProductByName(string name);
     }
 }
